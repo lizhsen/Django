@@ -6,10 +6,11 @@
   <ul>
       {% for topic in topics %}
       <li>
-          <a href="{% url 'learning_logss:topic' topic_id %}">{{ topic }}</a>
+          <a href="{% url 'learning_logss:topic' topic.id %}">{{ topic }}</a>
       </li>
       {% empty %}
       <li>No topics have been added yet.</li>
       {% endfor %}
   </ul>
+    <a href="{% url 'learning_logss:new_topic' %}">Add a new topic</a>
 {% endblock content %}
