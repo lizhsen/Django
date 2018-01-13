@@ -9,7 +9,8 @@ def bubble_sort(lists):
         for j in range(i+1, count):
             if lists[i] > lists[j]:
                 lists[i], lists[j] = lists[j], lists[i]
-                print lists
+                print str(lists)+"%\n"
+        print "#"+str(lists)+"#\n"
     return lists
 
 

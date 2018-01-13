@@ -9,7 +9,7 @@ def insert_sort(lists):
         j = i-1
         key = lists[i]
         while j >= 0:
-            if key > lists[j]:
+            if key < lists[j]:
                 lists[j+1] = lists[j]
                 lists[j] = key
                 print lists
