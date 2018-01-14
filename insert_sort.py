@@ -5,7 +5,7 @@ lists = [49, 38, 65, 97, 76, 13, 27, 49, 55, 04]
 
 
 def insert_sort(lists):
-    for i in range(1, len(lists)):
+    for i in range(1, len(lists)-1):
         j = i-1
         key = lists[i]
         while j >= 0:
